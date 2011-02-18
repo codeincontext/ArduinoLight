@@ -24,8 +24,9 @@ void loop() {
 
 void loopSliders() {
   for (int i=0; i<3; i++) {
-    cnlData[i] = map(analogRead(sliderPins[i]), 0, 1023, 0, 255);
-    cnlData[i+3] = map(analogRead(sliderPins[i]), 0, 1023, 0, 255);
+    v = map(analogRead(sliderPins[i]), 0, 1023, 0, 255)
+    cnlData[i] = v;
+    cnlData[i+3] = v;
   }
 }
 
